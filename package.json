@@ -1,0 +1,29 @@
+{
+  "name": "med-waste-system",
+  "version": "1.0.0",
+  "description": "Healthcare Biomedical Waste Tracking & IoT Telemetry Platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/index.js",
+    "dev": "node run-all.js",
+    "build": "npm --prefix backend install && npm --prefix frontend install && npm --prefix frontend run build",
+    "share": "node share.js",
+    "backend": "node backend/index.js",
+    "frontend": "cd frontend && npm run dev -- --host"
+  },
+  "keywords": [
+    "biomedical-waste",
+    "healthcare",
+    "cpcb",
+    "who",
+    "iot",
+    "react",
+    "nodejs"
+  ],
+  "author": "MedWaste Guard Team",
+  "license": "ISC",
+  "dependencies": {
+    "localtunnel": "^2.0.2",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
